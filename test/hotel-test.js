@@ -26,7 +26,7 @@ describe('Customer Functionality', function () {
 });
 
 describe('Hotel Room Functionality', function() {
-  it('should create a hotel booking', function() {
+  it('should create a hotel room', function() {
     const room1 = createHotelRoom(101, 'single', true, 'queen', 1, 120)
     expect(room1).to.be.an('object');
     expect(room1.number).to.equal(101);
@@ -36,7 +36,7 @@ describe('Hotel Room Functionality', function() {
     expect(room1.numBeds).to.equal(1);
     expect(room1.costPerNight).to.equal(120);
   })
-  it('should be able to have a different booking', function() {
+  it('should be able to have a different hotel room', function() {
     const rooms = []
     rooms[0] = createHotelRoom(101, 'single', true, 'queen', 1, 120)
     rooms[1] = createHotelRoom(102, 'double', false, 'king', 2, 200)
